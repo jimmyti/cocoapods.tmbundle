@@ -13,6 +13,8 @@
 	<string>none</string>
 	<key>inputFormat</key>
 	<string>text</string>
+	<key>isDisabled</key>
+	<false/>
 	<key>keyEquivalent</key>
 	<string>@r</string>
 	<key>name</key>

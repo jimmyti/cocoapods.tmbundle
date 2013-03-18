@@ -3,11 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>contactEmailRot13</key>
-	<string>+61421880506</string>
+	<string>wvzzlgv@tznvy.pbz</string>
 	<key>contactName</key>
 	<string>Jimmy Ti</string>
 	<key>description</key>
 	<string>Support for the &lt;a href="http://cocoapods.org/"&gt;CocoaPods Podfile.&lt;/a&gt;.</string>
+	<key>isDisabled</key>
+	<false/>
 	<key>name</key>
 	<string>CocoaPods</string>
 	<key>uuid</key>

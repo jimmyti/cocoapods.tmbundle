@@ -6,6 +6,10 @@
 	<array>
 		<string>Podfile</string>
 	</array>
+	<key>isDisabled</key>
+	<false/>
+	<key>keyEquivalent</key>
+	<string>^~P</string>
 	<key>name</key>
 	<string>Podfile</string>
 	<key>patterns</key>
@@ -44,10 +48,8 @@
 			<string>string.singlequoted</string>
 		</dict>
 	</array>
-	<key>scope</key>
-	<string>Podfile</string>
 	<key>scopeName</key>
-	<string>source.Podfile</string>
+	<string>source.podfile</string>
 	<key>uuid</key>
 	<string>9E005EDC-A8F0-4E1F-9F5E-72D70DD65FBE</string>
 </dict>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>+61421880506</string>
+	<key>contactName</key>
+	<string>Jimmy Ti</string>
+	<key>description</key>
+	<string>Support for the &lt;a href="http://cocoapods.org/"&gt;CocoaPods Podfile.&lt;/a&gt;.</string>
+	<key>name</key>
+	<string>CocoaPods</string>
+	<key>uuid</key>
+	<string>9997CFD8-8516-4ED1-91F4-588CCD1EB583</string>
+</dict>
+</plist>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>Podfile</string>
+	</array>
+	<key>name</key>
+	<string>Podfile</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>^\bplatform\s*?:</string>
+			<key>name</key>
+			<string>keyword.platform</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^\bpods*?</string>
+			<key>name</key>
+			<string>keyword.pod</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>'</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>variable.podname</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable.versionString</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>[^']+'?</string>
+			<key>name</key>
+			<string>string.singlequoted</string>
+		</dict>
+	</array>
+	<key>scope</key>
+	<string>Podfile</string>
+	<key>scopeName</key>
+	<string>source.Podfile</string>
+	<key>uuid</key>
+	<string>9E005EDC-A8F0-4E1F-9F5E-72D70DD65FBE</string>
+</dict>
+</plist>

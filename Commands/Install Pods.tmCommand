@@ -5,10 +5,14 @@
 	<key>beforeRunningCommand</key>
 	<string>saveActiveFile</string>
 	<key>command</key>
-	<string>#!/usr/bin/env bash
-[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+	<string>#!/usr/bin/env ruby
+require "#{ENV['TM_SUPPORT_PATH']}/lib/escape"
 
-/usr/bin/pod install | sed 's/%/%p/g;s/@/%a/g' | tr '\n' @ | sed 's/@/&lt;br&gt;/g;s/%a/@/g;s/%p/%/g'</string>
+Dir.chdir(ENV['TM_DIRECTORY'])
+
+puts %x{ pod install &amp;&gt; pod-install.tmresult }
+
+puts %x{ sed '$!s/$/&lt;br&gt;/g' &lt; pod-install.tmresult &amp;&amp; rm pod-install.tmresult}</string>
 	<key>input</key>
 	<string>none</string>
 	<key>inputFormat</key>
@@ -26,7 +30,7 @@
 	<key>outputLocation</key>
 	<string>newWindow</string>
 	<key>scope</key>
-	<string>Podfile</string>
+	<string>source.podfile</string>
 	<key>semanticClass</key>
 	<string>install.cocoapods</string>
 	<key>uuid</key>
